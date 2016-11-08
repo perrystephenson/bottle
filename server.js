@@ -36,8 +36,7 @@ Nice post, Perry
 `
 
 slapp.message('test', (msg, text) => {
-  msg.say(msg.body.event.user.name)
-  msg.say(text)
+  msg.say(msg.body.event.user)
 })
 
 // attach Slapp to express server
