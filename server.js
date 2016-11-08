@@ -36,7 +36,9 @@ Nice post, Perry
 `
 
 slapp.message('test', (msg, text) => {
-  msg.say(msg.body.event.user)
+  if (msg.body.event.user == 'U18TT99MY') {
+  msg.say(BRO_TEXT)
+  }
 })
 
 // attach Slapp to express server
