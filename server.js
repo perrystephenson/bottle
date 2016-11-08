@@ -36,7 +36,7 @@ Nice post, Perry
 `
 
 slapp.message('test', (msg, text) => {
-  msg.say(msg.body.event.user)
+  msg.say(msg.body.authed_user)
   msg.say(text)
 })
 
