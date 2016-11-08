@@ -35,9 +35,9 @@ var BRO_TEXT = `
 Nice post, Perry
 `
 
-slapp.message('*', (msg) => {
-  msg.say(msg.event.user)
-  msg.say(msg.authed_users)
+slapp.message('*', (msg, text) => {
+  msg.say(msg.body.event.user)
+  msg.say(text)
 })
 
 // attach Slapp to express server
