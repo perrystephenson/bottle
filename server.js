@@ -35,7 +35,7 @@ var BRO_TEXT = `
 Nice post, Perry
 `
 
-slapp.message('test', (msg, text) => {
+slapp.message('.*', (msg, text) => {
   if (msg.body.event.user == 'U18TT99MY') {
   msg.say(BRO_TEXT)
   }
