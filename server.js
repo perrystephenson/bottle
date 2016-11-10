@@ -46,8 +46,8 @@ slapp.message('[?]$', (msg) => {
   //if (msg.body.event.channel == 'C1924SRPG') {
     var str = msg.body.event.text
     var str1 = str.replace(/[^a-zA-Z1-9 ]/g, '');
-    //str2 = str1.replace(/[/w]/g, '+');
-    msg.say(str1)
+    var str2 = str1.replace(/[/w]/g, '+');
+    msg.say('http://stackexchange.com/search?q=%5Br%5D+' + str1)
   //}
 })
 
