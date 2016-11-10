@@ -45,9 +45,9 @@ slapp.message('help', ['direct_mention', 'direct_message'], (msg) => {
 slapp.message('[?]$', (msg) => {
   //if (msg.body.event.channel == 'C1924SRPG') {
     str = msg.body.event.text
-    str1 = str.replace(/[a-zA-Z1-9 ]/gi, '');
-    str2 = str1.replace(/[/w]/gi, '+');
-    msg.say(str2)
+    str1 = str.replace(/[^a-zA-Z1-9 ]/g, '');
+    //str2 = str1.replace(/[/w]/g, '+');
+    msg.say(str1)
   //}
 })
 
