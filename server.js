@@ -44,7 +44,7 @@ slapp.message('help', ['direct_mention', 'direct_message'], (msg) => {
 
 slapp.message('[?]$', (msg, text) => {
   //if (msg.body.event.channel == 'C1924SRPG') {
-    msg.say('test')
+    msg.say('http://stackexchange.com/search?q=%5Br%5D+what+is+the+best+package+for+text+mining%3F')
   //}
 })
 
