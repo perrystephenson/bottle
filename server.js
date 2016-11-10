@@ -43,13 +43,12 @@ slapp.message('help', ['direct_mention', 'direct_message'], (msg) => {
 
 
 slapp.message('[?]$', (msg) => {
-  //if (msg.body.event.channel == 'C1924SRPG') {
+  if (msg.body.event.channel == 'C1924SRPG') {
     var str = msg.body.event.text
     var str1 = str.replace(/[^a-zA-Z1-9 ]/g, '');
-    //var replaced = str.split(' ').join('+');
     var str2 = str1.replace(/[ ]/g, '\+');
     msg.say('http://stackexchange.com/search?q=%5Br%5D+' + str2)
-  //}
+  }
 })
 
 // attach Slapp to express server
