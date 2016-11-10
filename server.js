@@ -31,14 +31,21 @@ slapp.message('help', ['direct_mention', 'direct_message'], (msg) => {
 })
 
 
-var BRO_TEXT = `
-Nice post, Perry
-`
+//var BRO_TEXT = `
+//Nice post, Perry
+//`
 
-slapp.message('.*', (msg, text) => {
-  if (msg.body.event.user == 'U18TT99MY') {
-  msg.say(BRO_TEXT)
-  }
+//slapp.message('.*', (msg, text) => {
+//  if (msg.body.event.user == 'U18TT99MY') {
+//    msg.say(BRO_TEXT)
+//  }
+//})
+
+
+slapp.message('?$', (msg, text) => {
+  //if (msg.body.event.channel == 'D12345678') {
+    msg.say(msg.body.event.channel)
+  //}
 })
 
 // attach Slapp to express server
