@@ -42,7 +42,7 @@ slapp.message('help', ['direct_mention', 'direct_message'], (msg) => {
 //})
 
 
-slapp.message('?$', (msg, text) => {
+slapp.message('[?]$', (msg, text) => {
   //if (msg.body.event.channel == 'D12345678') {
     msg.say(msg.body.event.channel)
   //}
